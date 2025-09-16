@@ -8,7 +8,7 @@ import numpy as np
 import time
 from Com import *
 import pandas as pd
-import os
+import os 
 
 # 定义方向常量
 DOWN = (1, 0)
