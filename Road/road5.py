@@ -303,7 +303,7 @@ def special_path_to_restock(start, goal):
         for _ in range(steps_to_row3):
             new_state = move_backward(*current_state)
             if not is_valid(new_state[0], new_state[1]):
-                print("后退到第3行失败！")
+                print("后退到第6行失败！")
                 return None
             path.append(('backward', new_state))
             current_state = new_state
@@ -370,7 +370,7 @@ def plan_restock_task(init_pos, init_direction, pick_pos, empty_col, task_type):
     pick_goal = (pick_pos[0], pick_pos[1], pick_goal_direction)
 
     if task_type == 1:
-        # 补货位置 (6,19)，需要朝右
+        # 补货位置 (10, 66)，需要朝右
         restock_pos = (10, 66)
         restock_goal = (restock_pos[0], restock_pos[1], RIGHT)
     else:
